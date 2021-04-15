@@ -29,7 +29,7 @@ class ChatCommand extends Command {
 					Main::$cfg->set("Sohbet Durum", "Açık");
 					Main::$cfg->save();
 				}else{
-				$this->kForm($g);
+				$this->ChatForm($g);
 			}
 			}else{
 				$g->sendMessage("§8[§l§cX§r§8] §7Bu Komut'u Kullanma Yetkin Yok");
@@ -37,7 +37,7 @@ class ChatCommand extends Command {
 		}
 		return true;
 	}
-	public function kForm($g){
+	public function ChatForm($g){
 		$form = $this->p->getServer()->getPluginManager()->getPlugin("FormAPI")->createSimpleForm(function(Player $g, $data = null){
 			if(is_null($data)){
 				return true;
