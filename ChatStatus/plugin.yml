@@ -1,0 +1,7 @@
+name: ChatStatus
+api: [3.15.4, 3.17.2]
+version: 1.0.0
+main: TrFolwe\ChatStatus
+author: TrFolwe
+discord: TrFolwe#5675
+Github: https://github.com\TrFolwe
